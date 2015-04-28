@@ -9,11 +9,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/// <remarks>
+/// Interface en Oproep is
+///  in een service verwerkt.
+/// </remarks>
 public interface P2000 
 {
 	string capcode { get;set; }
 
-	Oproep Capcode { get;set; }
+	Oproep Oproep { get;set; }
 
 }
 

@@ -9,9 +9,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public enum Beschikbaar
+/// <remarks>SMS retour bericht: beschikbaarheid Piket functionaris</remarks>
+public enum Beschikbaar : int
 {
 	vertraagd,
 	beschikbaar,
-	niet_beschikbaar,
+	niet beschikbaar,
 }

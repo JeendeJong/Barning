@@ -9,6 +9,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/// <remarks>
+/// Interface en Oproep is
+///  in een service verwerkt.
+/// </remarks>
 public class Oproep
 {
 	private object regio
