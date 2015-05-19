@@ -44,7 +44,7 @@
     <Compile Include="GeneratedCode\Beschikbaar.cs" />
     <Compile Include="GeneratedCode\Capcode.cs" />
     <Compile Include="GeneratedCode\Controle.cs" />
-    <Compile Include="GeneratedCode\Error log.cs" />
+    <Compile Include="GeneratedCode\ErrorLog.cs" />
     <Compile Include="GeneratedCode\Kazerne.cs" />
     <Compile Include="GeneratedCode\Oproep.cs" />
     <Compile Include="GeneratedCode\OproepFunctie.cs" />

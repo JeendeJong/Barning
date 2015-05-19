@@ -9,9 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Error log
+public class ErrorLog
 {
-	private dateTime datumTijd
+	private DateTime datumTijd
 	{
 		get;
 		set;

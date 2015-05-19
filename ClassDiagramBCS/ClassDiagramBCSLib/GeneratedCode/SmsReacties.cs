@@ -17,7 +17,7 @@ public class SmsReacties
 		set;
 	}
 
-	private dateTime datumTijd
+	private DateTime datumTijd
 	{
 		get;
 		set;

@@ -11,13 +11,13 @@ using System.Text;
 
 public class Beheerder
 {
-	private object naam
+	private string naam
 	{
 		get;
 		set;
 	}
 
-	private object wachtwoord
+	private string wachtwoord
 	{
 		get;
 		set;

@@ -15,25 +15,25 @@ using System.Text;
 /// </remarks>
 public class Oproep
 {
-	private object regio
+	private string regio
 	{
 		get;
 		set;
 	}
 
-	private object discipline
+	private string discipline
 	{
 		get;
 		set;
 	}
 
-	private object omschrijving
+	private string omschrijving
 	{
 		get;
 		set;
 	}
 
-	private object korps
+	private string korps
 	{
 		get;
 		set;

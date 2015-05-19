@@ -11,13 +11,13 @@ using System.Text;
 
 public class OproepMelding
 {
-	private dateTime activering
+	private DateTime activering
 	{
 		get;
 		set;
 	}
 
-	private dateTime gesloten
+	private DateTime gesloten
 	{
 		get;
 		set;

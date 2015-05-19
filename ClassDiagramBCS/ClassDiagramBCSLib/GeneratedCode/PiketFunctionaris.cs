@@ -11,13 +11,13 @@ using System.Text;
 
 public class PiketFunctionaris
 {
-	private object naam
+	private string naam
 	{
 		get;
 		set;
 	}
 
-	private object functie
+	private string functie
 	{
 		get;
 		set;

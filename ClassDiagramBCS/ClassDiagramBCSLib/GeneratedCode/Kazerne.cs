@@ -23,13 +23,13 @@ public class Kazerne
 		set;
 	}
 
-	private dateTime geldigVanaf
+	private DateTime geldigVanaf
 	{
 		get;
 		set;
 	}
 
-	private dateTime geldigTot
+	private DateTime geldigTot
 	{
 		get;
 		set;

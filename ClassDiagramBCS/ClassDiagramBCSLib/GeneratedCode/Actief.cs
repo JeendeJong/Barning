@@ -17,19 +17,19 @@ public class Actief
 		set;
 	}
 
-	private array dagen
+	private Array dagen
+	{
+		private get;
+		private set;
+	}
+
+	private DateTime uurVanaf
 	{
 		get;
 		set;
 	}
 
-	private time uurVanaf
-	{
-		get;
-		set;
-	}
-
-	private time uurTot
+	private DateTime uurTot
 	{
 		get;
 		set;
