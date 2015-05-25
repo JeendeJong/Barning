@@ -14,7 +14,6 @@
             <asp:Label ID="Label3" runat="server" Text="Functie" style="position:absolute; top:60px; width:112px;  left: 650px; font-style: italic;"></asp:Label>
 
             <asp:Button ID="Button1" runat="server" Style="top: 150px; left: 125px; position: absolute; height: 120px; width: 120px" Text="Actueel" BackColor="#FFFF99" Font-Bold="True" />
-            <asp:Button ID="Button3" runat="server" Style="top: 150px; left: 375px; position: absolute; height: 120px; width: 120px" Text="Verzenden SMS" BackColor="#FFFF99"  Font-Bold="True" />
 
             <asp:Button ID="Button5" runat="server" Style="top: 275px; left: 125px; position: absolute; height: 120px; width: 120px" Text="Piket" BackColor="#FFFFCC" Font-Bold="True"  />
             <asp:Button ID="Button6" runat="server" Style="top: 275px; left: 250px; position: absolute; height: 120px; width: 120px" Text="Klant" BackColor="#FFFFCC" Font-Bold="True"  />
@@ -23,6 +22,8 @@
 
             <asp:Button ID="Button9" runat="server" Style="top: 400px; left: 125px; position: absolute; height: 120px; width: 120px" Text="Configuratie" BackColor="#FFFFCC" Font-Bold="True"  />
                     <asp:Label ID="Label4" runat="server" Text="version build" style="position:absolute; top:500px; width:112px;  left: 650px; font-style: italic;"></asp:Label>
+            <asp:Button ID="Button3" runat="server" Style="top: 150px; left: 252px; position: absolute; height: 120px; width: 120px" Text="Verzenden SMS" BackColor="#FFFF99"  Font-Bold="True" />
+
         </div>
         </form>
     </body>
