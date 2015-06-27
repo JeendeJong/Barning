@@ -76,5 +76,20 @@ public class OproepFunctie
 		throw new System.NotImplementedException();
 	}
 
+	public virtual bool dezeRegio(object regio)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void geefPiketFunctionaris()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void capcodeAanwezig()
+	{
+		throw new System.NotImplementedException();
+	}
+
 }
 

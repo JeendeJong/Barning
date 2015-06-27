@@ -9,19 +9,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class TelefoonNummer
+public interface App 
 {
-	private string telefoonNummer
-	{
-		get;
-		set;
-	}
+	int responseAppNr { get;set; }
 
-	public virtual PiketFunctionaris PiketFunctionaris
-	{
-		get;
-		set;
-	}
+	string bericht { get;set; }
+
+	AppReacties AppReacties { get;set; }
 
 }
 

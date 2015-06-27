@@ -51,7 +51,7 @@ public class Oproep
 		set;
 	}
 
-	public virtual bool actieveOproep()
+	public virtual string pushBericht()
 	{
 		throw new System.NotImplementedException();
 	}

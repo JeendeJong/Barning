@@ -19,5 +19,7 @@ public interface P2000
 
 	Oproep Oproep { get;set; }
 
+	string bewaarBericht();
+
 }
 

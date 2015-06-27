@@ -40,17 +40,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeneratedCode\Actief.cs" />
+    <Compile Include="GeneratedCode\App.cs" />
+    <Compile Include="GeneratedCode\AppReacties.cs" />
     <Compile Include="GeneratedCode\Beheerder.cs" />
     <Compile Include="GeneratedCode\Beschikbaar.cs" />
     <Compile Include="GeneratedCode\Capcode.cs" />
     <Compile Include="GeneratedCode\Controle.cs" />
+    <Compile Include="GeneratedCode\Email.cs" />
+    <Compile Include="GeneratedCode\EmailAccount.cs" />
     <Compile Include="GeneratedCode\ErrorLog.cs" />
+    <Compile Include="GeneratedCode\HulpdienstLocatie.cs" />
     <Compile Include="GeneratedCode\Kazerne.cs" />
+    <Compile Include="GeneratedCode\Log.cs" />
     <Compile Include="GeneratedCode\Oproep.cs" />
     <Compile Include="GeneratedCode\OproepFunctie.cs" />
     <Compile Include="GeneratedCode\OproepMelding.cs" />
     <Compile Include="GeneratedCode\P2000.cs" />
     <Compile Include="GeneratedCode\PiketFunctionaris.cs" />
+    <Compile Include="GeneratedCode\Regio.cs" />
     <Compile Include="GeneratedCode\SMS.cs" />
     <Compile Include="GeneratedCode\SmsReacties.cs" />
     <Compile Include="GeneratedCode\TelefoonNummer.cs" />

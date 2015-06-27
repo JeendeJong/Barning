@@ -9,19 +9,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class TelefoonNummer
+public interface Email 
 {
-	private string telefoonNummer
-	{
-		get;
-		set;
-	}
+	string bericht { get;set; }
 
-	public virtual PiketFunctionaris PiketFunctionaris
-	{
-		get;
-		set;
-	}
+	string ontvanger { get;set; }
 
 }
 

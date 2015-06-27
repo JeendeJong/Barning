@@ -9,9 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class TelefoonNummer
+public class EmailAccount
 {
-	private string telefoonNummer
+	private string emailAccount
 	{
 		get;
 		set;

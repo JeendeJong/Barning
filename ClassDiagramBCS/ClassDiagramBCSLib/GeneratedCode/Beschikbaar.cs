@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-/// <remarks>SMS retour bericht: beschikbaarheid Piket functionaris</remarks>
+/// <remarks>Retour SMS en App bericht: beschikbaarheid Piket functionaris. smsNr is 4 cijferig afkomstig van verstuurd bericht.</remarks>
 public enum Beschikbaar : int
 {
 	vertraagd,

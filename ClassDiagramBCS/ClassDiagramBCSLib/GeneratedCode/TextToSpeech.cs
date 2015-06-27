@@ -13,5 +13,7 @@ public interface TextToSpeech
 {
 	string bericht { get;set; }
 
+	int telefoonNr { get;set; }
+
 }
 

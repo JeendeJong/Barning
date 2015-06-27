@@ -41,7 +41,7 @@ public class OproepMelding
 		set;
 	}
 
-	private string oproepFunctie
+	private ArrayClass oproepFunctie
 	{
 		get;
 		set;
@@ -53,24 +53,29 @@ public class OproepMelding
 		set;
 	}
 
-	public virtual TextToSpeech TextToSpeech
+	public virtual IEnumerable<TextToSpeech> TextToSpeech
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<VerstuurdeBerichtenLog> VerstuurdeBerichtenLog
+	public virtual IEnumerable<Email> Email
 	{
 		get;
 		set;
 	}
 
-	public virtual void verstuurBerichten()
+	public virtual void verstuurBericht(object interface)
 	{
 		throw new System.NotImplementedException();
 	}
 
 	public virtual void berichtenLog()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void geefLocatie()
 	{
 		throw new System.NotImplementedException();
 	}

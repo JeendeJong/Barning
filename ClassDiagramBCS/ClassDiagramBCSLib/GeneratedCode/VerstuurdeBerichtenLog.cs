@@ -23,5 +23,23 @@ public class VerstuurdeBerichtenLog
 		set;
 	}
 
+	private int oproepMeldingId
+	{
+		get;
+		set;
+	}
+
+	public virtual DateTime registratieDatumTijd
+	{
+		get;
+		set;
+	}
+
+	public virtual OproepMelding OproepMelding
+	{
+		get;
+		set;
+	}
+
 }
 

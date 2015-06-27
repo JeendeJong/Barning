@@ -41,7 +41,7 @@ public class PiketFunctionaris
 		set;
 	}
 
-	private bool kazerneBeheerder
+	private bool locatieBeheerder
 	{
 		get;
 		set;
@@ -53,22 +53,38 @@ public class PiketFunctionaris
 		set;
 	}
 
-	private string kazerne
+	private string locatie
 	{
 		get;
 		set;
 	}
 
-	public virtual OproepMelding OproepMelding
+	private bool gebruikSms
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<TelefoonNummer> TelefoonNummer
+	private bool gebruikEmail
 	{
 		get;
 		set;
+	}
+
+	public virtual IEnumerable<OproepFunctie> OproepFunctie
+	{
+		get;
+		set;
+	}
+
+	public virtual void geefEmailAccount()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void geefTelefoonnummer()
+	{
+		throw new System.NotImplementedException();
 	}
 
 }

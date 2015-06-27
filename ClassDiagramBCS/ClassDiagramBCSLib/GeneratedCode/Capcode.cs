@@ -29,5 +29,10 @@ public class Capcode
 		set;
 	}
 
+	public virtual void capcodeActief()
+	{
+		throw new System.NotImplementedException();
+	}
+
 }
 

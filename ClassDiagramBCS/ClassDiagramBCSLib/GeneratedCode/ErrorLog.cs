@@ -17,7 +17,7 @@ public class ErrorLog
 		set;
 	}
 
-	private string errorType
+	private string errorSoort
 	{
 		get;
 		set;

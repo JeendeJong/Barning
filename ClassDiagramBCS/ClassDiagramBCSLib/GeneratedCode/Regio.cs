@@ -9,15 +9,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class TelefoonNummer
+public class Regio
 {
-	private string telefoonNummer
+	private string naam
 	{
 		get;
 		set;
 	}
 
-	public virtual PiketFunctionaris PiketFunctionaris
+	public virtual OproepFunctie OproepFunctie
 	{
 		get;
 		set;

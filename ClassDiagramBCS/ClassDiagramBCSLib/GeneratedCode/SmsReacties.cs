@@ -11,7 +11,7 @@ using System.Text;
 
 public class SmsReacties
 {
-	private int smsNr
+	private int responseSmsNr
 	{
 		get;
 		set;

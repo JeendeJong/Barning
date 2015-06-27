@@ -9,15 +9,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class TelefoonNummer
+public class AppReacties
 {
-	private string telefoonNummer
+	private int responseAppNr
 	{
 		get;
 		set;
 	}
 
-	public virtual PiketFunctionaris PiketFunctionaris
+	private DateTime datumTijd
+	{
+		get;
+		set;
+	}
+
+	private string bericht
+	{
+		get;
+		set;
+	}
+
+	public virtual OproepMelding OproepMelding
 	{
 		get;
 		set;

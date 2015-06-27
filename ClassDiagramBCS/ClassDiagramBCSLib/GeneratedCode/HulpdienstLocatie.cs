@@ -9,15 +9,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class TelefoonNummer
+public class HulpdienstLocatie
 {
-	private string telefoonNummer
+	private string naam
 	{
 		get;
 		set;
 	}
 
-	public virtual PiketFunctionaris PiketFunctionaris
+	private string wachtwoord
+	{
+		get;
+		set;
+	}
+
+	private DateTime geldigVanaf
+	{
+		get;
+		set;
+	}
+
+	private DateTime geldigTot
+	{
+		get;
+		set;
+	}
+
+	private bool uitgeschakeld
+	{
+		get;
+		set;
+	}
+
+	public virtual OproepMelding OproepMelding
 	{
 		get;
 		set;
