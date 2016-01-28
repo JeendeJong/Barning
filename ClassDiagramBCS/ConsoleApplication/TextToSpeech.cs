@@ -9,11 +9,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public interface TextToSpeech 
 {
 	string bericht { get;set; }
 
-	int smsNr { get;set; }
+	int telefoonNr { get;set; }
 
 }
 

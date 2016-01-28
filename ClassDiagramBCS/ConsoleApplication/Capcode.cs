@@ -9,11 +9,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class Capcode
 {
-	string bericht { get;set; }
+	private int capcodeNr
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	private string omschrijving
+	{
+		get;
+		set;
+	}
+
+	public virtual OproepFunctie OproepFunctie
+	{
+		get;
+		set;
+	}
+
+	public virtual void capcodeActief()
+	{
+		throw new System.NotImplementedException();
+	}
 
 }
 

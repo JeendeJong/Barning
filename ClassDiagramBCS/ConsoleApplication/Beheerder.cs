@@ -9,11 +9,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class Beheerder
 {
-	string bericht { get;set; }
+	private string naam
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	private string wachtwoord
+	{
+		get;
+		set;
+	}
+
+	public virtual void opgaveBeschikbaarheidPiket()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void opvragenSMSnummerHoveelheid()
+	{
+		throw new System.NotImplementedException();
+	}
 
 }
 

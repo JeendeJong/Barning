@@ -9,82 +9,80 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class OproepMelding
+public class PiketFunctionaris
 {
-	private DateTime activering
+	private string naam
 	{
 		get;
 		set;
 	}
 
-	private DateTime gesloten
+	private string functie
 	{
 		get;
 		set;
 	}
 
-	private int smsNr
+	private Beschikbaar beschikbaar
 	{
 		get;
 		set;
 	}
 
-	private string bericht
+	private string wachtwoord
 	{
 		get;
 		set;
 	}
 
-	private string capcode
+	private int incidentBeheerder
 	{
 		get;
 		set;
 	}
 
-	private ArrayClass oproepFunctie
+	private bool locatieBeheerder
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<SMS> SMS
+	private bool actief
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<TextToSpeech> TextToSpeech
+	private string locatie
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<Email> Email
+	private bool gebruikSms
 	{
 		get;
 		set;
 	}
 
-	/// <summary>
-	/// OproepMelding
-	/// </summary>
-	public virtual App App
+	private bool gebruikEmail
 	{
 		get;
 		set;
 	}
 
-	public virtual void verstuurBericht(object interface)
+	public virtual IEnumerable<OproepFunctie> OproepFunctie
+	{
+		get;
+		set;
+	}
+
+	public virtual void geefEmailAccount()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void berichtenLog()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void geefLocatie()
+	public virtual void geefTelefoonnummer()
 	{
 		throw new System.NotImplementedException();
 	}

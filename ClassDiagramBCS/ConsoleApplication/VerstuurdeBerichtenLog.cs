@@ -9,11 +9,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class VerstuurdeBerichtenLog
 {
-	string bericht { get;set; }
+	private string bericht
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	private int smsNr
+	{
+		get;
+		set;
+	}
+
+	private int oproepMeldingId
+	{
+		get;
+		set;
+	}
+
+	public virtual DateTime registratieDatumTijd
+	{
+		get;
+		set;
+	}
+
+	public virtual OproepMelding OproepMelding
+	{
+		get;
+		set;
+	}
 
 }
 

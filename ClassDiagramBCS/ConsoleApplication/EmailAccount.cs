@@ -9,11 +9,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class EmailAccount
 {
-	string bericht { get;set; }
+	private string emailAccount
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	public virtual PiketFunctionaris PiketFunctionaris
+	{
+		get;
+		set;
+	}
 
 }
 

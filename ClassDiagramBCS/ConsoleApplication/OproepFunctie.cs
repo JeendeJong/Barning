@@ -9,82 +9,84 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class OproepMelding
+public class OproepFunctie
 {
-	private DateTime activering
+	private bool actief
 	{
 		get;
 		set;
 	}
 
-	private DateTime gesloten
+	private string activeringsMelding
 	{
 		get;
 		set;
 	}
 
-	private int smsNr
+	private string berichtActieveGebruiker
 	{
 		get;
 		set;
 	}
 
-	private string bericht
+	private string berichtDeactieveGebruiker
 	{
 		get;
 		set;
 	}
 
-	private string capcode
+	private int capcodeNr
 	{
 		get;
 		set;
 	}
 
-	private ArrayClass oproepFunctie
+	private string deactiveringsMelding
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<SMS> SMS
+	private string totaalAantalPersonenEmail
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<TextToSpeech> TextToSpeech
+	private int totaalAantalPersonenSms
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<Email> Email
+	private int totaalAantalPersonen
 	{
 		get;
 		set;
 	}
 
-	/// <summary>
-	/// OproepMelding
-	/// </summary>
-	public virtual App App
+	public virtual OproepMelding OproepMelding
 	{
 		get;
 		set;
 	}
 
-	public virtual void verstuurBericht(object interface)
+	public virtual bool activeerOproepFunctie()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void berichtenLog()
+	public virtual bool dezeRegio(object regio)
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void geefLocatie()
+	public virtual void geefPiketFunctionaris()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void capcodeAanwezig()
 	{
 		throw new System.NotImplementedException();
 	}

@@ -9,11 +9,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class SmsReacties
 {
-	string bericht { get;set; }
+	private int responseSmsNr
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	private DateTime datumTijd
+	{
+		get;
+		set;
+	}
+
+	private string bericht
+	{
+		get;
+		set;
+	}
+
+	public virtual OproepMelding OproepMelding
+	{
+		get;
+		set;
+	}
 
 }
 

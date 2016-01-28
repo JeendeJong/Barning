@@ -9,11 +9,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class Regio
 {
-	string bericht { get;set; }
+	private string naam
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	public virtual OproepFunctie OproepFunctie
+	{
+		get;
+		set;
+	}
 
 }
 

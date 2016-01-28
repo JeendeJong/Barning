@@ -9,11 +9,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+/// <remarks>
+/// Interface en Oproep is
+///  in een service verwerkt.
+/// </remarks>
+public interface P2000 
 {
-	string bericht { get;set; }
+	string capcode { get;set; }
 
-	int smsNr { get;set; }
+	Oproep Oproep { get;set; }
+
+	string bewaarBericht();
 
 }
 

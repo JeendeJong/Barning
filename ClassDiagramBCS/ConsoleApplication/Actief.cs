@@ -9,11 +9,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class Actief
 {
-	string bericht { get;set; }
+	private bool actief
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	private Array dagen
+	{
+		private get;
+		private set;
+	}
+
+	private DateTime uurVanaf
+	{
+		get;
+		set;
+	}
+
+	private DateTime uurTot
+	{
+		get;
+		set;
+	}
+
+	public virtual Capcode Capcode
+	{
+		get;
+		set;
+	}
 
 }
 

@@ -9,11 +9,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class Controle
 {
-	string bericht { get;set; }
+	private string bericht
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	public virtual OproepMelding OproepMelding
+	{
+		get;
+		set;
+	}
+
+	public virtual bool voerControleUit()
+	{
+		throw new System.NotImplementedException();
+	}
 
 }
 

@@ -9,11 +9,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface App 
+public class ErrorLog
 {
-	string bericht { get;set; }
+	private DateTime datumTijd
+	{
+		get;
+		set;
+	}
 
-	int smsNr { get;set; }
+	private string errorSoort
+	{
+		get;
+		set;
+	}
+
+	private string bericht
+	{
+		get;
+		set;
+	}
 
 }
 
