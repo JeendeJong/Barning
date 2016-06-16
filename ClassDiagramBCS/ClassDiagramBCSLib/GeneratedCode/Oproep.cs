@@ -15,46 +15,24 @@ using System.Text;
 /// </remarks>
 public class Oproep
 {
-	private string regio
+    private string regio;
+	private string discipline;
+    private string capcode;
+
+
+	public void creeerOproep(string _capcode)
 	{
-		get;
-		set;
+        regio        = _capcode.Substring(0, 2);
+        capcode      = _capcode;
 	}
 
-	private string discipline
-	{
-		get;
-		set;
-	}
+    public string getRegio()
+    {
+        return regio;
+    }
 
-	private string omschrijving
-	{
-		get;
-		set;
-	}
-
-	private string korps
-	{
-		get;
-		set;
-	}
-
-	private string capcode
-	{
-		get;
-		set;
-	}
-
-	public virtual OproepFunctie OproepFunctie
-	{
-		get;
-		set;
-	}
-
-	public virtual string pushBericht()
-	{
-		throw new System.NotImplementedException();
-	}
-
+    public string getOproepCapcode()
+    {
+        return capcode;
+    }
 }
-

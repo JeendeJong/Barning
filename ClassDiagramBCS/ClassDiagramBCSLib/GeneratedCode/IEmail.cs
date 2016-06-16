@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface Email 
+public interface IEmail 
 {
 	string bericht { get;set; }
 

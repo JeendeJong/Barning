@@ -47,19 +47,19 @@ public class OproepMelding
 		set;
 	}
 
-	public virtual IEnumerable<SMS> SMS
+	public virtual IEnumerable<ISMS> SMS
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<TextToSpeech> TextToSpeech
+	public virtual IEnumerable<ITextToSpeech> TextToSpeech
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<Email> Email
+	public virtual IEnumerable<IEmail> Email
 	{
 		get;
 		set;
@@ -68,7 +68,7 @@ public class OproepMelding
 	/// <summary>
 	/// OproepMelding
 	/// </summary>
-	public virtual App App
+	public virtual IApp App
 	{
 		get;
 		set;

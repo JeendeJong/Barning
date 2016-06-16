@@ -9,11 +9,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface TextToSpeech 
+public interface ILog 
 {
 	string bericht { get;set; }
 
-	int telefoonNr { get;set; }
+	DateTime datumTijd { get;set; }
+
+	string errorSoort { get;set; }
+
+	ErrorLog ErrorLog { get;set; }
 
 }
 

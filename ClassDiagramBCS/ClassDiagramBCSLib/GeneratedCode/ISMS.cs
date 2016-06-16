@@ -9,43 +9,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Kazerne
+public interface ISMS 
 {
-	private string naam
-	{
-		get;
-		set;
-	}
+	string bericht { get;set; }
 
-	private string wachtwoord
-	{
-		get;
-		set;
-	}
-
-	private DateTime geldigVanaf
-	{
-		get;
-		set;
-	}
-
-	private DateTime geldigTot
-	{
-		get;
-		set;
-	}
-
-	private bool uitgeschakeld
-	{
-		get;
-		set;
-	}
-
-	public virtual OproepMelding OproepMelding
-	{
-		get;
-		set;
-	}
+	int smsNr { get;set; }
 
 }
 
