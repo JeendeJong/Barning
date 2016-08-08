@@ -14,5 +14,5 @@ public enum Beschikbaar : int
 {
 	vertraagd,
 	beschikbaar,
-	niet beschikbaar,
-}
+	niet_beschikbaar
+};

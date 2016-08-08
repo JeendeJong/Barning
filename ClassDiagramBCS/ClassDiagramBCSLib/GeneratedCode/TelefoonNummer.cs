@@ -23,5 +23,9 @@ public class TelefoonNummer
 		set;
 	}
 
-}
 
+    public void setTelefoonNummer(string _telefoonNummer)
+    {
+        telefoonNummer = _telefoonNummer;
+    }
+}

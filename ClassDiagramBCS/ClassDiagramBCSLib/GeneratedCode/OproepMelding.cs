@@ -40,13 +40,13 @@ public class OproepMelding
 		get;
 		set;
 	}
-
+/*
 	private ArrayClass oproepFunctie
 	{
 		get;
 		set;
 	}
-
+*/
 	public virtual IEnumerable<ISMS> SMS
 	{
 		get;
@@ -73,7 +73,7 @@ public class OproepMelding
 		get;
 		set;
 	}
-
+/*
 	public virtual void verstuurBericht(object interface)
 	{
 		throw new System.NotImplementedException();
@@ -88,6 +88,6 @@ public class OproepMelding
 	{
 		throw new System.NotImplementedException();
 	}
-
+*/
 }
 

@@ -16,13 +16,13 @@ public class Actief
 		get;
 		set;
 	}
-
+/*
 	private Array dagen
 	{
 		private get;
 		private set;
 	}
-
+*/
 	private DateTime uurVanaf
 	{
 		get;
@@ -35,11 +35,21 @@ public class Actief
 		set;
 	}
 
-	public virtual Capcode Capcode
+	public virtual Capcode capcode
 	{
 		get;
 		set;
 	}
 
+    public void setActief(bool _actief)
+    {
+        actief = _actief;
+    }
+
+
+    public bool getActief()
+    {
+        return actief;
+    }
 }
 

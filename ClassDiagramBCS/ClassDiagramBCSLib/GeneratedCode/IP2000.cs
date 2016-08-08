@@ -10,28 +10,14 @@ using System.Linq;
 using System.Text;
 
 /// <remarks>
-/// Interface en Oproep is in een service verwerkt.
+/// Interface en Oproep is
+///  in een service verwerkt.
 /// </remarks>
-
-public class Oproep
+public interface IP2000 
 {
-    private string regio;
-	private string discipline;
-    private string capcode;
+	string capcode { get;set; }
 
-	public void creeerOproep(string _capcode)
-	{
-        regio        = _capcode.Substring(0, 2);
-        capcode      = _capcode;
-	}
+	Oproep Oproep { get;set; }
 
-    public string getRegio()
-    {
-        return regio;
-    }
-
-    public string getOproepCapcode()
-    {
-        return capcode;
-    }
 }
+

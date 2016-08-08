@@ -23,7 +23,7 @@ public class PiketFunctionaris
 		set;
 	}
 
-	private Beschikbaar beschikbaar
+	private bool beschikbaar
 	{
 		get;
 		set;
@@ -35,23 +35,11 @@ public class PiketFunctionaris
 		set;
 	}
 
-	private int incidentBeheerder
-	{
-		get;
-		set;
-	}
+	private int incidentBeheerder { get; set; }
 
-	private bool locatieBeheerder
-	{
-		get;
-		set;
-	}
+	private bool locatieBeheerder { get; set; }
 
-	private bool actief
-	{
-		get;
-		set;
-	}
+	private bool actief 	{ get; set; }
 
 	private string locatie
 	{
@@ -87,5 +75,22 @@ public class PiketFunctionaris
 		throw new System.NotImplementedException();
 	}
 
+    public virtual void setPiketFunctionaris(bool _actief, bool _gebruikSMS, bool _beschikbaar, string _naam)
+    {
+        actief = _actief;
+        gebruikSms = _gebruikSMS;
+        beschikbaar = _beschikbaar;
+        naam = _naam;
+    }
+
+    public bool getActief()
+    {
+        return actief;
+    }
+
+    public bool getBeschikbaar()
+    {
+        return beschikbaar;
+    }
 }
 
