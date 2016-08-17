@@ -56,7 +56,6 @@
     <Compile Include="GeneratedCode\Oproep.cs" />
     <Compile Include="GeneratedCode\OproepFunctie.cs" />
     <Compile Include="GeneratedCode\OproepMelding.cs" />
-    <Compile Include="GeneratedCode\P2000.cs" />
     <Compile Include="GeneratedCode\PiketFunctionaris.cs" />
     <Compile Include="GeneratedCode\Regio.cs" />
     <Compile Include="GeneratedCode\SmsReacties.cs" />

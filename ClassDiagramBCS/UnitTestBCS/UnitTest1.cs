@@ -43,20 +43,32 @@ namespace UnitTestBCS
             capCode.setCapcode(capcode);
             capCode.setOmschrijving("Piketvoertuig ambulance");
             actief.setActief(true);
-            piketFunctionaris.setPiketFunctionaris(true, true, true, "Jan de Vries");
+            piketFunctionaris.setPiketFunctionaris(true, true, true, false, "Jan de Vries");
             telefoonNummer.setTelefoonNummer("0701234567");
             oproepFunctie.creeerOproepFunctie(capcode);                 //verdeel info van capcode in object
             oproepFunctie.setOmschrijving(capCode.getOmschrijving());   //zet capcode omschrijving in oproep
             
             //Assert
             Assert.IsTrue(actief.getActief(), "Capcode niet actief");
-            Assert.IsTrue(piketFunctionaris.getActief(), "Piket functionaris niet actief");
-            Assert.IsTrue(piketFunctionaris.getBeschikbaar(), "Piket functionaris niet beschikbaar");
+            Assert.AreEqual(true, piketFunctionaris.getActief() && piketFunctionaris.getBeschikbaar(), "Piket functionaris niet actief of niet beschikbaar"); //piketfunctionaris actief en beschikbaar?
+            Assert.AreEqual(true, piketFunctionaris.getGebruikSms() || piketFunctionaris.getGebruikEmail(), "Piket functionaris heeft geen SMS en Email communicatie opgegeven");
 
-            //Assert.AreEqual(true, piketFunctionaris.getActief() && piketFunctionaris.getBeschikbaar(), "Piket functionaris niet actief"); //piketfunctionaris actief en beschikbaar?
 
-            //Piketfunctionaris actief, zo ja, welk communicatiekanaal wordt aangesproken
-           // if ()
+            /*
+            if (piketFunctionaris.getGebruikSms())
+            {
+                Console.WriteLine("SMS");
+            }
+            else if (piketFunctionaris.getGebruikEmail())
+            {
+                Console.WriteLine("Email");
+            }
+            else
+            {
+                Assert.Fail("Piket functionaris heeft geen SMS en Email communicatie opgegeven");
+            }
+            */
+
 
             //log
         }
@@ -64,8 +76,25 @@ namespace UnitTestBCS
         [TestMethod]
         public void TestCreeerOproepMelding()
         {
+            //arrange
             OproepMelding oproepMelding = new OproepMelding();
+
+            //act
+            PiketFunctionaris piketFunctionaris = new PiketFunctionaris();
             
+            DateTime messageDate = new DateTime();
+            oproepMelding.setOproepMelding(messageDate, 5783, "TCO BRW Haaglanden", capcode);
+
+            //assert
+            if (piketFunctionaris.getGebruikSms())
+            {
+                oproepMelding.verstuurBericht(); //verzin hoe sms meekomt
+            }
+            else if (piketFunctionaris.getGebruikEmail())
+            {
+                oproepMelding.verstuurBericht(); //verzin hoe email meekomt
+            }
+
             //melding actief, overgaan op uitsturen bericht naar Piket Functionarissen
 
 
@@ -80,5 +109,7 @@ namespace UnitTestBCS
 
             //log            
         }
+
+       // public object iSms { get; set; }
     }
 }

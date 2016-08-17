@@ -15,11 +15,11 @@ using System.Text;
 
 public class Oproep
 {
-    private string regio;
-	private string discipline;
-    private string capcode;
+    public string regio;
+	public string discipline;
+    public string capcode;
 
-	public void creeerOproep(string _capcode)
+    public void creeerOproep(string _capcode)
 	{
         regio        = _capcode.Substring(0, 2);
         capcode      = _capcode;

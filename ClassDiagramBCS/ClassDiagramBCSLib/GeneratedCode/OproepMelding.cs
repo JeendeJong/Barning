@@ -11,83 +11,54 @@ using System.Text;
 
 public class OproepMelding
 {
-	private DateTime activering
-	{
-		get;
-		set;
-	}
+	private DateTime activering { get; set; }
 
-	private DateTime gesloten
-	{
-		get;
-		set;
-	}
+	private DateTime gesloten  { get; set; }
 
-	private int smsNr
-	{
-		get;
-		set;
-	}
+	private int smsNr { get; set; }
 
-	private string bericht
-	{
-		get;
-		set;
-	}
+	private string bericht { get; set; }
 
-	private string capcode
-	{
-		get;
-		set;
-	}
-/*
-	private ArrayClass oproepFunctie
-	{
-		get;
-		set;
-	}
-*/
-	public virtual IEnumerable<ISMS> SMS
-	{
-		get;
-		set;
-	}
+	private string capcode { get; set; }
+    
+    //private ArrayClass oproepFunctie  { get; set; }
 
-	public virtual IEnumerable<ITextToSpeech> TextToSpeech
-	{
-		get;
-		set;
-	}
+    public virtual IEnumerable<ISMS> SMS  { get; set; }
 
-	public virtual IEnumerable<IEmail> Email
-	{
-		get;
-		set;
-	}
+	public virtual IEnumerable<ITextToSpeech> TextToSpeech { get; set; }
 
-	/// <summary>
+	public virtual IEnumerable<IEmail> Email { get; set; }
+
+    /// <summary>
 	/// OproepMelding
 	/// </summary>
-	public virtual IApp App
-	{
-		get;
-		set;
-	}
-/*
-	public virtual void verstuurBericht(object interface)
-	{
-		throw new System.NotImplementedException();
-	}
+	public virtual IApp App { get; set; }
+
+	public virtual void verstuurBericht()
+    {
+       throw new System.NotImplementedException();
+    }
 
 	public virtual void berichtenLog()
 	{
 		throw new System.NotImplementedException();
 	}
-
+/*
 	public virtual void geefLocatie()
 	{
 		throw new System.NotImplementedException();
 	}
 */
+
+    public void setOproepMelding(DateTime _activering, int _smsNr, string _bericht, string _capcode) //, DateTime _gesloten, )
+    {
+        //throw new System.NotImplementedException();
+        activering = _activering;  
+        //gesloten = _gesloten;
+        smsNr = _smsNr;
+        bericht = _bericht;
+        capcode = _capcode;
+       
+    }
 }
 

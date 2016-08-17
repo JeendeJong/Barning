@@ -14,6 +14,4 @@ public interface ISMS
 	string bericht { get;set; }
 
 	int smsNr { get;set; }
-
 }
-

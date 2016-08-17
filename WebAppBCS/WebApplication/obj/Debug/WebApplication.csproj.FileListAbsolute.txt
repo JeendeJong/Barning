@@ -1,6 +1,0 @@
-C:\BarningGithub\WebAppBCS\WebApplication\bin\WebApplication.dll.config
-C:\BarningGithub\WebAppBCS\WebApplication\bin\WebApplication.dll
-C:\BarningGithub\WebAppBCS\WebApplication\bin\WebApplication.pdb
-C:\BarningGithub\WebAppBCS\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
-C:\BarningGithub\WebAppBCS\WebApplication\obj\Debug\WebApplication.dll
-C:\BarningGithub\WebAppBCS\WebApplication\obj\Debug\WebApplication.pdb

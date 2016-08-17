@@ -11,29 +11,13 @@ using System.Text;
 
 public class PiketFunctionaris
 {
-	private string naam
-	{
-		get;
-		set;
-	}
+	private string naam { get; set; }
 
-	private string functie
-	{
-		get;
-		set;
-	}
+	private string functie	{ get; set; }
 
-	private bool beschikbaar
-	{
-		get;
-		set;
-	}
+	private bool beschikbaar	{ get; set; }
 
-	private string wachtwoord
-	{
-		get;
-		set;
-	}
+    private string wachtwoord	{ get; set; }
 
 	private int incidentBeheerder { get; set; }
 
@@ -41,29 +25,13 @@ public class PiketFunctionaris
 
 	private bool actief 	{ get; set; }
 
-	private string locatie
-	{
-		get;
-		set;
-	}
+	private string locatie	{ get; set; }
 
-	private bool gebruikSms
-	{
-		get;
-		set;
-	}
+	private bool gebruikSms	{ get; set; }
 
-	private bool gebruikEmail
-	{
-		get;
-		set;
-	}
+	private bool gebruikEmail	{ get; set; }
 
-	public virtual IEnumerable<OproepFunctie> OproepFunctie
-	{
-		get;
-		set;
-	}
+	public virtual IEnumerable<OproepFunctie> OproepFunctie	{ get; set; }
 
 	public virtual void geefEmailAccount()
 	{
@@ -75,11 +43,12 @@ public class PiketFunctionaris
 		throw new System.NotImplementedException();
 	}
 
-    public virtual void setPiketFunctionaris(bool _actief, bool _gebruikSMS, bool _beschikbaar, string _naam)
+    public virtual void setPiketFunctionaris(bool _actief, bool _beschikbaar, bool _gebruikSms, bool _gebruikEmail, string _naam)
     {
         actief = _actief;
-        gebruikSms = _gebruikSMS;
         beschikbaar = _beschikbaar;
+        gebruikSms = _gebruikSms;
+        gebruikEmail = _gebruikEmail;
         naam = _naam;
     }
 
@@ -92,5 +61,14 @@ public class PiketFunctionaris
     {
         return beschikbaar;
     }
-}
 
+    public bool getGebruikSms()
+    {
+        return gebruikSms;
+    }
+
+    public bool getGebruikEmail()
+    {
+        return gebruikEmail;
+    }
+}
