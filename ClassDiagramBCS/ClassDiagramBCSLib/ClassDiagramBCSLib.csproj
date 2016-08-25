@@ -48,10 +48,12 @@
     <Compile Include="GeneratedCode\ErrorLog.cs" />
     <Compile Include="GeneratedCode\HulpdienstLocatie.cs" />
     <Compile Include="GeneratedCode\IApp.cs" />
+    <Compile Include="GeneratedCode\IAppReactie.cs" />
     <Compile Include="GeneratedCode\IEmail.cs" />
     <Compile Include="GeneratedCode\ILog.cs" />
     <Compile Include="GeneratedCode\IP2000.cs" />
-    <Compile Include="GeneratedCode\ISMS.cs" />
+    <Compile Include="GeneratedCode\ISms.cs" />
+    <Compile Include="GeneratedCode\ISmsReactie.cs" />
     <Compile Include="GeneratedCode\ITextToSpeech.cs" />
     <Compile Include="GeneratedCode\Oproep.cs" />
     <Compile Include="GeneratedCode\OproepFunctie.cs" />
