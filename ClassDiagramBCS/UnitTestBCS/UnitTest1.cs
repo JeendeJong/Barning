@@ -43,15 +43,16 @@ namespace UnitTestBCS
             //Act
             capCode.setCapcode(capcode);
             capCode.setOmschrijving("Piketvoertuig ambulance");
-            actief.setActief(true);
+            actief.setActief(true); 
             piketFunctionaris.setPiketFunctionaris(true, true, true, false, false, false, "Jan de Vries");
             telefoonNummer.setTelefoonNummer("0701234567");
             oproepFunctie.activeerOproepMelding(capcode);                 //verdeel info van capcode in object
             oproepFunctie.setOmschrijving(capCode.getOmschrijving());   //zet capcode omschrijving in oproep
-            oproepFunctie.setActive(true);
+            oproepFunctie.setActive(false);
             
             //Assert
             Assert.IsTrue(actief.getActief(), "Capcode niet actief");
+            Assert.IsTrue(oproepFunctie.getActief(), "Oproepfunctie niet actief en wordt niet geactiveerd");
             Assert.AreEqual(true, piketFunctionaris.getActief() && piketFunctionaris.getBeschikbaar(), "Piket functionaris niet actief of niet beschikbaar"); //piketfunctionaris actief en beschikbaar?
             Assert.AreEqual(true, piketFunctionaris.getGebruikSms() || piketFunctionaris.getGebruikEmail() || piketFunctionaris.getGebruikApp() || piketFunctionaris.getGebruikTextToSpeech(), "Piket functionaris heeft geen SMS, Email, App of TextToSpeech communicatie opgegeven");
 
